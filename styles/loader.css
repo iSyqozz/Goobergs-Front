@@ -1,0 +1,58 @@
+.loader{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 0 2em;
+    height: 100px;
+    width: 30%;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto 1em;
+    display: inline-block;
+  }
+
+  .loader--style8{
+    display: none;
+    z-index: 9999999999999999999999999;
+  }
+
+  /*
+    Set the color of the icon
+  */
+  svg path,
+  svg rect{
+    fill: white;
+  }
+  #layer_1{
+    width: 100px;
+    height: 100px;
+  }
+
+  @keyframes float3 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .loader-prompt{
+    display: none;
+    position: fixed;
+    top: 60vh;
+    text-align: center;
+    width: 100%;
+    height: fit;
+    font-size: xx-large;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 1px;
+    z-index: 9999999999999999999999999;
+    animation: float3 1.5s ease-in-out infinite;
+  }

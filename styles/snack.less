@@ -1,0 +1,70 @@
+
+.snackbar {
+  z-index: 999999999;
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  position: fixed;
+  bottom: -30;
+  left: 0;
+  right: 0;
+  transition: opacity 1s ease-out;
+  
+  .snack {
+    border-radius: 4px;
+    background: #121214;
+    color: white;
+    opacity: 0;
+    padding: 20px;
+    pointer-events: initial;
+    position: relative;
+    transition: opacity 0.5s ease-in-out,transform 0.5s ease-in-out;
+    
+    &.active {
+      opacity: 1;
+      transform: translateY(-50px);
+
+    }
+    
+    span {
+      position: relative;
+      z-index: 999999999;
+    }
+    
+    &.dismissible {
+      padding-right: 54px;
+      
+      button {
+        background: tomato;
+        border: none;
+        border-radius: 100%;
+        color: black;
+        height: 24px;
+        line-height: 20px;
+        position: absolute;
+          right: 15px;
+          top: 18px;
+        text-align: center;
+        width: 24px;
+        z-index: 999999999;
+        cursor: pointer;
+      }
+    }
+    
+    .progress {
+      background: rgb(2, 197, 197);
+      height: 4px;
+      position: absolute;
+        bottom: 0;
+        left: 0;
+      transition: width 30ms linear;
+      width: 0;
+      z-index: 9999999999;
+    }
+  }
+}
+
+.hide{
+  opacity: 0;
+}
