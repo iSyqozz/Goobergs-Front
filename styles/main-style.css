@@ -259,6 +259,7 @@ body{
 }
 
 .burn-woopa{
+    display: none ;
     border: 1px solid #3b4c4d;
     position: relative;
     left: 50%;
