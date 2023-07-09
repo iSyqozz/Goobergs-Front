@@ -178,6 +178,8 @@ body{
     transform: translateX(-50%);
     color: rgb(255, 255, 255);
     font-size: 18px;
+    width: 100%;
+    text-align: center;
 }
 
 .staked-count-wrapper .progress-wrapper .progress-fill{
